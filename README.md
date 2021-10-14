@@ -9,14 +9,18 @@ public class SplashActivity {
     protected void onCreate(Bundle savedInstanceState) {
         
         ...
-        
-        startActivity(new Intent(this, MainActivity.class));
-        finish();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                startActivity(new Intent(SplashActivity.this, MainActivity.class));
+                finish();
+            }
+        }, 3000); // But it gives fuc**ng white or black screen on App Open before this activity
     }
 }
 ```
 
-The thing is, this is nothing but a 3 seconds waisting of the user's time!
+The thing is, this is nothing but a 3 seconds waisting of the user's time! But it gives fuc**ng white or black screen on App Open before this activity
 
 ##### As you can notice, Google has gotten their opinion in favor of Splash Screens on their [Official Material Design Documentation](https://material.io/guidelines/patterns/launch-screens.html)
 
