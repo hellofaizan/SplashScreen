@@ -1,4 +1,4 @@
-# SplashScreen
+# SplashScreen Concept by Curious Faizan
 # How to use a Splash screen correctly
 
 Well, there are a lot of blog tutorials teaching how to create a splash screen like this:
