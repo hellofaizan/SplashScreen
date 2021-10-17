@@ -114,7 +114,7 @@ public class SplashActivity extends AppCompatActivity {
 
 ```xml
 <style name="SplashScreen" parent="Theme.AppCompat.NoActionBar">
-    <item name="android:windowBackground">@drawable/activity_splash</item>
+    <item name="android:windowBackground">@drawable/splash_bg</item>
 </style>
 ```
 
