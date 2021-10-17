@@ -61,7 +61,7 @@ public class SplashActivity extends AppCompatActivity {
 ```
 
 ###### Create a drawable file 
-**activity_splash.xml
+**splash_bg.xml
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -99,7 +99,12 @@ public class SplashActivity extends AppCompatActivity {
         </activity>
         <activity android:name=".activities.MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme" />
+                  android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
